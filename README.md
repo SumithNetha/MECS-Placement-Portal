@@ -1,153 +1,235 @@
+# MECS Placement Portal
 
-## Topic-College Realted
+## Topic – College Related
 
-## Team-code stomp
+---
 
+## Problem Statement
 
-### [Problem Statement]()- Many time student have visited many websites / blogs for find where is Job opening is there or not, Many cases they miss the opportunity. In this modern world bombard with information make students confused, one mentor in form of senior can definitely help how to web dev, Android dev ,AWS and many more questions 
+Students often visit multiple websites and blogs to find job opportunities and placement updates. Due to scattered information, many students miss opportunities.
 
+The Placement Portal provides a centralized platform where students can access placement drives, notices, registration, and career-related information efficiently.
 
+It also helps students connect with coordinators and administrators for placement activities.
 
+---
 
-## INTRODUCTION
+# Introduction
 
-The Placement Management System is a web application for the training and  placement department of our college. This system can be accessed throughout the  organization with proper login credentials. Students will be able to upload their  personal and educational information which will be managed efficiently by the  system. It intends to provide a fast access to the placement procedures and related  activities and ensures to maintain the details of the student secure. The key feature of  this project is that it is a onetime registration enabled system. This project will aid  colleges to practice full IT deployment.
+The Placement Management System is a web application developed for the Training and Placement Department of the college.
 
+This system allows students to upload and manage their academic and personal details securely. Coordinators and administrators can monitor placement drives, approve registrations, publish notices, and manage student records.
 
+The system follows a one-time registration model and improves placement process efficiency through digital management.
 
+---
 
-## Features
-- Separate Login Page For Admin, Coordinater and Student
-- Interactive Dashboard
-- Coordinater can Update the drive and check the applied and modify accordingly
-- Admin can Approve and reject request of All type of registration 
-- Admin can post notice to all students and coordinater separately
-- Upload technical papers
-- View Student and Company Profile
-- Interactive Contact us Page
+# Features
 
+* Separate Login for Admin, Placement Cell and Student
+* Interactive Dashboard
+* Placement Drive Management
+* Student Registration System
+* Company Registration Approval
+* Admin Notice Management
+* Upload Technical Papers
+* View Student and Company Profiles
+* Contact Support Page
+* Secure Data Management
 
+---
 
-## Technology and Framework Used
-- HTML
-- CSS
-- Javascript
-- Reat
-- Bootstrap
-- PHP
-- Mysql
+# Technology Stack
 
+* HTML
+* CSS
+* JavaScript
+* Bootstrap
+* PHP
+* MySQL
 
-
-
-
-
-
-
-
-
+---
 
 # PROJECT SNAPSHOTS
 
-- Home Page
+## Home Page
 
+![Home Page](screenshots/home.png)
 
+---
 
+## Student Registration
 
+![Student Registration](screenshots/student_register.png)
 
+---
 
+## Student Login
 
-![Screenshot 2023-01-13 010557](https://user-images.githubusercontent.com/111070211/212168678-52429e68-17a2-4150-9643-5706f9eadea5.jpg)
+![Student Login](screenshots/student_login.png)
 
-- Registration Page For Students and Companies
+---
 
+## Placement Cell Login
 
-![Screenshot 2023-01-13 010755](https://user-images.githubusercontent.com/111070211/212170065-d00e3794-2f7c-449f-b18c-6767fc73a37e.jpg)
+![Placement Cell Login](screenshots/placement_login.png)
 
- 
- - Login Page
- 
+---
 
-![Screenshot 2023-01-13 013254](https://user-images.githubusercontent.com/111070211/212169229-27f3c260-ac8f-480d-a13c-178a2ded1dde.jpg)
+## Placement Cell Register
 
-Admin Login
+![Placement Cell Register](screenshots/placement_register.png)
 
-![image](https://user-images.githubusercontent.com/111070211/212169400-2040c5f6-e110-42b6-bd27-8b7b18e06743.png)
+---
 
-Admin dashboard
+## Admin Login
 
+![Admin Login](screenshots/admin_login.png)
 
+---
 
+## Admin Dashboard
 
-![Screenshot 2023-01-13 014007](https://user-images.githubusercontent.com/111070211/212170495-0bb04ef3-83bb-459b-ba17-71b4256f396d.jpg)
+![Admin Dashboard](screenshots/admin_dashboard.png)
 
-coordinator dashboard
+---
 
-![Screenshot 2023-01-13 010827](https://user-images.githubusercontent.com/111070211/212170601-a1fe5719-50fa-4275-b4d5-c27d1ca3fe57.jpg)
+## FAQ Page
 
-- contact us
+![FAQ](screenshots/faq.png)
 
-![image](https://user-images.githubusercontent.com/111070211/212170893-dbb903ec-b720-4331-9d6c-22abe6107f2a.png)
+---
 
-![image](https://user-images.githubusercontent.com/111070211/212171069-884f15b9-13a7-4d74-b7d4-0d46d178b359.png)
+## Contact Us
 
+![Contact Us](screenshots/contact_us.png)
 
-<br>
-GETTING STARTED
+---
 
-1. Install XAMPP or WAMPP.
+## Logout Page
 
-2. Open XAMPP Control panal and start [apache] and [mysql] .
+![Logout](screenshots/logout.png)
 
-3. Download project from github(https://github.com/atinder11/Placement-Portal).
+---
 
-OR follow gitbash commands
+# Getting Started
 
-i> cd C:\\xampp\htdocs\
+## Prerequisites
 
-ii> git clone https://github.com/atinder11/Placement-Portal
+Install:
 
-4. Extract files in C:\xampp\htdocs.
+* XAMPP
 
-5. Open link localhost/phpmyadmin
+Start:
 
-6. Click on new at side navbar.
+* Apache
+* MySQL
 
-7. Give a database name as (placement_portal) hit on create button.
+---
 
-8. After creating database name click on import.
+## Installation
 
-9. Browse the file in directory [placement-portal/database/db1.sql].
+### Step 1 — Clone Repository
 
-10. Open any browser and type http://localhost/placement-portal.
+```bash
+cd C:\xampp\htdocs\
+git clone https://github.com/SumithNetha/MECS-Placement-Portal.git
+```
 
+---
 
+### Step 2 — Move Project
 
+Place project inside:
 
+```text
+C:\xampp\htdocs\Placement-Portal-main
+```
 
+---
 
+### Step 3 — Create Database
 
+Open:
 
+```text
+http://localhost/phpmyadmin
+```
 
+Create database:
 
+```text
+placement_portal
+```
 
+---
 
+### Step 4 — Import Database
 
+Import:
 
+```text
+database/db1.sql
+```
 
+---
 
+### Step 5 — Configure Database
 
+Open:
 
+```text
+db.php
+```
 
+Set:
 
+```php
+$servername="localhost";
+$username="root";
+$password="";
+$dbname="placement_portal";
+```
 
+---
 
-### Team Member
+### Step 6 — Run Project
 
-- [Atinder Kumar](https://github.com/atinder11)
+Open browser:
 
-- [Suyash Rawat](https://github.com/SuyashRawat)
+```text
+http://localhost/Placement-Portal-main
+```
 
-- [Jatin Tagore](https://github.com/jazz1706)
+---
+
+# Folder Structure
+
+```text
+Placement-Portal-main
+│
+├── admin
+├── assets
+├── company
+├── database
+├── screenshots
+├── uploads
+├── user
+├── index.php
+├── db.php
+└── README.md
+```
+
+---
+
+# Future Enhancements
+
+* Resume Analyzer
+* Email Notifications
+* Placement Analytics Dashboard
+* AI-based Job Recommendation
+* Student Performance Tracking
+
+---
 
 
